@@ -1,0 +1,59 @@
+name: Other
+description: Suggestions, questions, or anything else that isn't a bug, crash, or mod conflict.
+title: "[Other]: "
+labels: [ "Other" ]
+type: Bug
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which Enhanced Celestials 2 project is this about? Each project is a separate mod/jar.
+      options:
+        - Core
+        - Default Lunar Events
+        - Shaders
+        - Datapack Editor
+        - Not sure / multiple
+    validations:
+      required: false
+  - type: dropdown
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: What Minecraft version are you using? If your version isn't listed here, we don't support it.
+      options:
+        - 1.20.1
+        - 1.21.1
+        - 26.1
+        - 26.2
+    validations:
+      required: false
+  - type: input
+    id: project-version
+    attributes:
+      label: Project Version
+      description: What version of the project selected above are you using?
+      placeholder: ex. 1.0.0.0
+    validations:
+      required: false
+  - type: dropdown
+    id: mod-loader
+    attributes:
+      label: Mod Loader
+      description: What Mod Loader are you running?
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Tell us what's on your mind! Feature suggestion, question, feedback, whatever it may be.
+      placeholder: Tell us what you see!
+    validations:
+      required: true

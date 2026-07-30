@@ -1,0 +1,43 @@
+name: Mod Suggestion
+description: Suggest a new feature or improvement for Enhanced Celestials.
+title: "[Suggestion]: "
+labels: [ "Suggestion" ]
+type: Feature
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which Enhanced Celestials 2 project should this go in? Each project is a separate mod/jar. Pick "Not sure / multiple" if you don't mind where it lands.
+      options:
+        - Core
+        - Default Lunar Events
+        - Shaders
+        - Datapack Editor
+        - Not sure / multiple
+    validations:
+      required: true
+  - type: input
+    id: feature
+    attributes:
+      label: Feature
+      description: A short summary of the feature you're suggesting.
+      placeholder: ex. A new lunar event for the winter solstice
+    validations:
+      required: true
+  - type: textarea
+    id: how-it-should-work
+    attributes:
+      label: How should this feature work?
+      description: Explain how you imagine this feature working in-game.
+      placeholder: Describe how it should function...
+    validations:
+      required: true
+  - type: textarea
+    id: why-it-should-be-added
+    attributes:
+      label: Why should this be added?
+      description: Explain why this would be a good addition to the mod.
+      placeholder: Describe the motivation/benefit...
+    validations:
+      required: true

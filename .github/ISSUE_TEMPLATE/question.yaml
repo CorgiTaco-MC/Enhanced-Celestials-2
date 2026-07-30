@@ -1,0 +1,26 @@
+name: Question
+description: Ask a question about Enhanced Celestials.
+title: "[Question]: "
+labels: [ "Question" ]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which Enhanced Celestials 2 project is your question about? Each project is a separate mod/jar.
+      options:
+        - Core
+        - Default Lunar Events
+        - Shaders
+        - Datapack Editor
+        - Not sure / multiple
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to ask?
+      placeholder: Ask away!
+    validations:
+      required: true

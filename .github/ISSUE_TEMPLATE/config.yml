@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Corgi Taco's Discord
+    url: https://discord.gg/eWPBm4QFFz
+    about: Join our discord to chat with us, ask questions, or make suggestions in regards to Enhanced Celestials!
+  - name: Wiki
+    url: https://github.com/CorgiTaco/Enhanced-Celestials/wiki
+    about: Information on configuring Enhanced Celestials and more!
+  - name: Support me!
+    url: https://corgitaco.dev/support
+    about: Support Corgi Taco!

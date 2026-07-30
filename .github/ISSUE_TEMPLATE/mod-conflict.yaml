@@ -1,0 +1,96 @@
+name: Mod Conflict
+description: Something breaks only when another mod is installed alongside Enhanced Celestials? Report it here!
+title: "[Mod Conflict]: "
+labels: [ "Mod Conflict" ]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Prior to filling out this report please try the following:**
+        -Confirm the issue only happens with both mods installed together, by first isolating Enhanced Celestials on its own, then isolating just Enhanced Celestials + the conflicting mod, to help narrow down which mod is actually responsible.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which Enhanced Celestials 2 project does the conflict involve? Each project is a separate mod/jar. Remember that Core is always installed, so pick the project you can actually remove to make the conflict go away.
+      options:
+        - Core
+        - Default Lunar Events
+        - Shaders
+        - Datapack Editor
+        - Not sure / multiple
+    validations:
+      required: true
+  - type: dropdown
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: What Minecraft version are you using? If your version isn't listed here, we don't support it.
+      options:
+        - 1.20.1
+        - 1.21.1
+        - 26.1
+        - 26.2
+    validations:
+      required: true
+  - type: input
+    id: project-version
+    attributes:
+      label: Project Version
+      description: What version of the project selected above are you using?
+      placeholder: ex. 1.0.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: mod-loader
+    attributes:
+      label: Mod Loader
+      description: What Mod Loader are you running?
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+    validations:
+      required: true
+  - type: input
+    id: mod-loader-version
+    attributes:
+      label: Mod Loader Version
+      description: What version of the mod loader are you using?
+      placeholder: ex. 36.0.45
+    validations:
+      required: true
+  - type: input
+    id: conflicting-mod
+    attributes:
+      label: Conflicting Mod(s)
+      description: Which other mod(s) does this conflict happen with, including their versions?
+      placeholder: ex. Some Other Mod 2.5.1
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please give a thorough explanation of the conflict you found. Attach/Link relevant images/files in relation to the issue(s)!
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: mod-list
+    attributes:
+      label: Full Mod List
+      description: Please upload your full mod list directly here or use https://gist.github.com/ and leave the link here.
+      placeholder: Drag and drop your mod list here or link it with https://gist.github.com/!
+    validations:
+      required: true
+  - type: textarea
+    id: latest-log
+    attributes:
+      label: latest.log
+      description: Please upload your latest.log file directly here or use https://gist.github.com/ and leave the link here.
+      placeholder: Drag and drop latest.log file here or link it with https://gist.github.com/!
+    validations:
+      required: true
