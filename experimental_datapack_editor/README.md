@@ -10,4 +10,4 @@
 
 
 # How to use
-* To access the datapack editor use `/ec config` in a singleplayer world
+* To access the datapack editor use `/ec config` in a singleplayer world with cheats activated
