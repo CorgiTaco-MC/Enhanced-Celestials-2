@@ -3,9 +3,9 @@ contact_links:
   - name: Corgi Taco's Discord
     url: https://discord.gg/eWPBm4QFFz
     about: Join our discord to chat with us, ask questions, or make suggestions in regards to Enhanced Celestials!
-  - name: Wiki
-    url: https://github.com/CorgiTaco/Enhanced-Celestials/wiki
-    about: Information on configuring Enhanced Celestials and more!
+  - name: Editing the mod / Making your own EC 2 Add-on
+    url: https://github.com/CorgiTaco-MC/Enhanced-Celestials-2/tree/main/experimental_datapack_editor
+    about: Datapack editor for configuring lunar events or making your own!
   - name: Support me!
     url: https://corgitaco.dev/support
     about: Support Corgi Taco!
